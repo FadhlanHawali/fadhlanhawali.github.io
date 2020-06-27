@@ -6,8 +6,16 @@
     }
 
     &__menu{//Mobile menu
-        > span{
+    
+        >span{
             display: block;
+            width: 40px;
+            height: 2px;
+            background-color: $darkBlue;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 3px;
         }
     }
 }
