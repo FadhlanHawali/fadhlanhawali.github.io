@@ -8,7 +8,6 @@
     opacity: 0;
   }
   to {
-    visibility: visible;
     opacity: 1;
   }
 }
@@ -23,14 +22,13 @@
     opacity: 0;
   }
   to {
-    visibility: visible;
     opacity: 1;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in forwards;
-          animation: fade-in 300ms ease-in forwards;
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -64,8 +62,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
 }
 
 html {
@@ -163,14 +161,6 @@ button, .button {
   left: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9698a6), to(transparent));
   background-image: linear-gradient(#9698a6, transparent);
-}
-
-.header .overlay.fade-in {
-  display: block;
-}
-
-.header .overlay.fade-out {
-  display: none;
 }
 
 .header nav {
